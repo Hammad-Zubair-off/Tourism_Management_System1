@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "749110f0-ddcb-4fb4-8070-99a23cf3d71b",
+		"name": "Tourism Management System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "39620506"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/attractions/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Statue of Liberty Pak",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "New York, Pak",
+							"type": "text"
+						},
+						{
+							"key": "entryFee",
+							"value": "35",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:3000/attractions/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/visitors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Jane Hammad",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "Hammad@example.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:3000/visitors"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/visitors/visit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "jane@example.com",
+							"type": "text"
+						},
+						{
+							"key": "attractionName",
+							"value": "Statue of Liberty Pak",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:3000/visitors/visit"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/reviews/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "visitorEmail",
+							"value": "jane@example.com",
+							"type": "text"
+						},
+						{
+							"key": "attractionName",
+							"value": "Statue of Liberty Pak",
+							"type": "text"
+						},
+						{
+							"key": "score",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "comment",
+							"value": "Great view but too crowded.",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:3000/reviews/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/attractions/top-rated",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/attractions/top-rated"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/attractions/activity",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/attractions/activity"
+			},
+			"response": []
+		}
+	]
+}
